@@ -6,6 +6,7 @@ document.getElementById('button3').addEventListener('click',getExternalAPI);
 
 
 // Get Data from Local Text File 
+
 function getText() {
     fetch('data.txt')
     .then(response => response.text())
@@ -21,9 +22,9 @@ function getText() {
 function getJSON() {
     fetch('data.json')
     .then(res => res.json())
-    .then( data => {
+    .then(data => {
         let output = '';
-        data.forEach(function (post) {
+        data.forEach((post) => {
             output += `<li>${post.title}</li>`;
         });
         document.getElementById('output').innerHTML= output ;
