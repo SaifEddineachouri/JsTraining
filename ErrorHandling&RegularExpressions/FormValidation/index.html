@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h1>User Form</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="text" class="form-control" id="Name" placeholder="Name">
+                        <div class="invalid-feedback">
+                            Name must  be between 2 and 10 characters
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ZipCode">ZipCode</label>
+                        <input type="text" class="form-control" id="ZipCode" placeholder="ZipCode">
+                        <div class="invalid-feedback">
+                            Enter a valid Zip code                         
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="text" class="form-control" id="Email" placeholder="Email">
+                        <div class="invalid-feedback">
+                            Enter a Valid Email
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone">Phone Number</label>
+                        <input type="text" class="form-control" id="Phone" placeholder="Phone Number">
+                        <div class="invalid-feedback">
+                            Enter a Valid Phone
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./Validation.js"></script>
+</body>
+</html>
